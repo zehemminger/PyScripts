@@ -1,0 +1,26 @@
+Namespace(hot_pixel_pth='/home/zach/Documents/PySpots/hot_pixels_aug2018.pkl', md_path='/bigstore/Images2018/Zach/FISH_Troubleshooting/Transverse_Second_2018Aug24/', ncpu=52, out_path='/data/Transverse_Second_2018Aug24/')
+Traceback (most recent call last):
+  File "/home/zach/Documents/PySpots/image_process_queue_Zach.py", line 155, in <module>
+    md = Metadata(args.md_path)
+  File "/home/zach/Documents/PyImages/metadata.py", line 28, in __init__
+    for subdir, curdir, filez in walk(pth):
+  File "/home/zach/miniconda3/envs/pyspots/lib/python3.6/os.py", line 409, in walk
+    yield from walk(new_path, topdown, onerror, followlinks)
+  File "/home/zach/miniconda3/envs/pyspots/lib/python3.6/os.py", line 409, in walk
+    yield from walk(new_path, topdown, onerror, followlinks)
+  File "/home/zach/miniconda3/envs/pyspots/lib/python3.6/os.py", line 358, in walk
+    entry = next(scandir_it)
+KeyboardInterrupt
+Namespace(bead_path='/data/Transverse_Second_2018Aug24/beads.pkl', md_path='/bigstore/Images2018/Zach/FISH_Troubleshooting/Transverse_Second_2018Aug24/', ncpu=[4], out_path='/data/Transverse_Second_2018Aug24')
+Traceback (most recent call last):
+  File "/home/zach/Documents/PySpots/analysis_scripts/find_tforms_by_optimization.py", line 157, in <module>
+    md = Metadata(args.md_path)
+  File "/home/zach/Documents/PyImages/metadata.py", line 28, in __init__
+    for subdir, curdir, filez in walk(pth):
+  File "/home/zach/miniconda3/envs/pyspots/lib/python3.6/os.py", line 409, in walk
+    yield from walk(new_path, topdown, onerror, followlinks)
+  File "/home/zach/miniconda3/envs/pyspots/lib/python3.6/os.py", line 409, in walk
+    yield from walk(new_path, topdown, onerror, followlinks)
+  File "/home/zach/miniconda3/envs/pyspots/lib/python3.6/os.py", line 358, in walk
+    entry = next(scandir_it)
+KeyboardInterrupt

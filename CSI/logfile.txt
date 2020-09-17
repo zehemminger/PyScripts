@@ -1,0 +1,687 @@
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 15, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 15, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 64, 'n_latent': 10, 'n_layers': 1, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 11, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 14, 'n_layers': 1, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 11, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 11, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 9, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 12, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 15, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 12, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 256, 'n_latent': 10, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 11, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 256, 'n_latent': 9, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 256, 'n_latent': 14, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 11, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 12, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 5, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 5, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 4, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 15, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 14, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 9, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 64, 'n_latent': 7, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 15, 'n_layers': 1, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 5, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 6, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 14, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 12, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 9, 'n_layers': 4, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 11, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 12, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 15, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 256, 'n_latent': 10, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 6, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 11, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 6, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 5, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 9, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 14, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 6, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 12, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 64, 'n_latent': 15, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 5, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 11, 'n_layers': 4, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 14, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 9, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 12, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 15, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 13, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+INFO (hyperopt.mongoexp): job exception: 
+INFO (scvi.inference.autotune.all): Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 5, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+INFO (hyperopt.mongoexp): job exception: 
+INFO (hyperopt.mongoexp): Error while unpickling.
+INFO (hyperopt.mongoexp): job exception: 
+INFO (hyperopt.mongoexp): Error while unpickling.
+INFO (hyperopt.mongoexp): job exception: 
+INFO (hyperopt.mongoexp): Error while unpickling.
+INFO (hyperopt.mongoexp): job exception: 

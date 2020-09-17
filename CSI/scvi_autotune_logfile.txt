@@ -1,0 +1,2963 @@
+[2020-01-29 16:42:22,492 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting experiment: dataset
+[2020-01-29 16:42:22,494 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Using default parameter search space.
+[2020-01-29 16:42:22,496 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Adding default early stopping behaviour.
+[2020-01-29 16:42:22,498 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Fixed parameters: 
+model: 
+{}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo']}
+train method: 
+{'n_epochs': 30}
+[2020-01-29 16:42:22,500 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting parallel hyperoptimization
+[2020-01-29 16:42:22,873 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting MongoDb process, logs redirected to ./mongo/mongo_logfile.txt.
+[2020-01-29 16:42:28,656 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting minimization procedure
+[2020-01-29 16:42:28,659 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+Starting FminProcess.
+[2020-01-29 16:42:28,660 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting worker launcher
+[2020-01-29 16:42:28,664 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+gpu_ids is None, defaulting to all 1 GPUs found by torch.
+[2020-01-29 16:42:28,666 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Some GPU.s found and n_cpu_wokers is None, defaulting to n_cpu_workers = 0
+[2020-01-29 16:42:28,670 - MainProcess - Progress Listener] DEBUG - scvi.inference.autotune.all
+Listener listening...
+[2020-01-29 16:42:28,671 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 1 worker.s for each of the 1 gpu.s set for use/found.
+[2020-01-29 16:42:57,995 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 0 cpu worker.s
+[2020-01-29 16:43:02,889 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-29 16:43:02,890 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-29 16:43:26,090 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+No timer, waiting for fmin...
+[2020-01-29 16:43:25,726 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-29 16:43:25,727 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating MongoTrials object.
+[2020-01-29 16:43:25,795 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Calling fmin.
+[2020-01-29 16:46:06,089 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 16:46:06,090 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 16:46:06,408 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 16:46:09,557 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 16:54:48,056 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 16:55:35,325 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:41.988714 with loss = 2258.02962907117
+[2020-01-29 16:55:37,932 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+1 job.s done
+[2020-01-29 16:56:11,946 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 15, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-29 16:56:11,948 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 16:56:12,080 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 16:56:12,114 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 17:06:46,286 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 17:07:36,289 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:34.341125 with loss = 2343.79980990436
+[2020-01-29 17:07:38,644 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+2 job.s done
+[2020-01-29 17:08:10,335 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 15, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-29 17:08:10,336 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 17:08:10,928 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 17:08:11,000 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 17:17:38,641 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 17:18:22,259 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:28.307643 with loss = 2352.201053065225
+[2020-01-29 17:18:24,276 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+3 job.s done
+[2020-01-29 17:18:58,627 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 64, 'n_latent': 10, 'n_layers': 1, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-29 17:18:58,628 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 17:18:58,767 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 17:18:58,792 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 17:33:47,748 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 17:34:23,386 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:14:49.121938 with loss = 2506.05279327503
+[2020-01-29 17:34:25,173 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+4 job.s done
+[2020-01-29 17:34:57,771 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 11, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-29 17:34:57,772 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 17:34:58,056 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 17:34:58,096 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 17:46:38,334 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 17:47:29,560 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:40.563418 with loss = 2392.609819274513
+[2020-01-29 17:47:30,951 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+5 job.s done
+[2020-01-29 17:48:03,277 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 14, 'n_layers': 1, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-29 17:48:03,277 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 17:48:03,402 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 17:48:03,428 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 18:02:45,804 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 18:03:21,915 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:14:42.528087 with loss = 2265.4424785671204
+[2020-01-29 18:03:26,826 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+6 job.s done
+[2020-01-29 18:03:56,559 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 18:03:56,560 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 18:03:56,684 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 18:03:56,711 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 18:18:38,569 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 18:19:30,263 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:14:42.010755 with loss = 2255.4324312316903
+[2020-01-29 18:19:32,793 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+7 job.s done
+[2020-01-29 18:20:07,963 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 11, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-29 18:20:07,964 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 18:20:08,106 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 18:20:08,137 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 18:35:35,000 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 18:36:23,013 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:15:27.069760 with loss = 2422.4257038385317
+[2020-01-29 18:36:28,786 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+8 job.s done
+[2020-01-29 18:37:03,483 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 11, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-29 18:37:03,484 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 18:37:04,039 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 18:37:04,101 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 18:45:09,776 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 18:45:58,695 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:06.293979 with loss = 2323.4320986989487
+[2020-01-29 18:46:04,427 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+9 job.s done
+[2020-01-29 18:46:33,300 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 9, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-29 18:46:33,301 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 18:46:33,871 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 18:46:33,969 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 18:56:23,300 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 18:57:19,436 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:50.001512 with loss = 2309.4983925340343
+[2020-01-29 18:57:25,141 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+10 job.s done
+[2020-01-29 18:57:54,999 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 12, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-29 18:57:55,000 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 18:57:55,287 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 18:57:55,324 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 19:06:34,119 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 19:07:22,628 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:39.122051 with loss = 2258.150983327589
+[2020-01-29 19:07:25,797 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+11 job.s done
+[2020-01-29 19:08:01,248 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 15, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-29 19:08:01,249 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 19:08:01,372 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 19:08:01,398 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 19:23:30,864 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 19:24:18,969 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:15:29.619271 with loss = 2299.1486515595384
+[2020-01-29 19:24:21,828 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+12 job.s done
+[2020-01-29 19:25:00,288 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 12, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-29 19:25:00,289 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 19:25:00,413 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 19:25:00,441 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 19:34:16,366 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 19:34:58,714 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:16.079366 with loss = 2322.0982425577286
+[2020-01-29 19:35:02,472 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+13 job.s done
+[2020-01-29 19:35:36,780 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 256, 'n_latent': 10, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-29 19:35:36,781 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 19:35:37,350 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 19:35:37,442 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 19:45:44,464 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 19:46:37,463 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:07.684767 with loss = 2304.963418705842
+[2020-01-29 19:46:43,192 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+14 job.s done
+[2020-01-29 19:47:20,903 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 11, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-29 19:47:20,904 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 19:47:21,083 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 19:47:21,117 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 20:04:14,218 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 20:04:58,218 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:16:53.316421 with loss = 2449.818831584956
+[2020-01-29 20:04:59,363 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+15 job.s done
+[2020-01-29 20:05:35,884 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 256, 'n_latent': 9, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-29 20:05:35,885 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 20:05:36,463 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 20:05:36,530 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 20:15:35,644 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 20:16:36,029 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:59.760153 with loss = 2263.1314702524555
+[2020-01-29 20:16:40,115 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+16 job.s done
+[2020-01-29 20:17:17,139 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 256, 'n_latent': 14, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-29 20:17:17,140 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 20:17:18,404 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 20:17:18,483 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 20:28:17,065 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 20:29:21,103 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:59.927367 with loss = 2301.874963650267
+[2020-01-29 20:29:26,015 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+17 job.s done
+[2020-01-29 20:29:59,770 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-29 20:29:59,771 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 20:30:00,061 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 20:30:00,105 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 20:46:21,241 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 20:47:12,032 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:16:21.471693 with loss = 2313.4698095274
+[2020-01-29 20:47:17,229 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+18 job.s done
+[2020-01-29 20:47:48,085 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 11, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-29 20:47:48,086 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 20:47:48,355 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 20:47:48,423 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 20:59:35,310 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 21:00:38,581 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:47.226575 with loss = 2297.599937532311
+[2020-01-29 21:00:43,118 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+19 job.s done
+[2020-01-29 21:01:18,788 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 12, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-29 21:01:18,789 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 21:01:18,920 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 21:01:18,951 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 21:15:33,973 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 21:16:36,240 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:14:15.186563 with loss = 2406.024397402206
+[2020-01-29 21:16:39,226 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+20 job.s done
+[2020-01-29 21:17:10,831 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 21:17:10,832 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 21:17:11,101 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 21:17:11,139 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 21:27:07,016 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 21:27:59,391 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:56.188005 with loss = 2247.277400967172
+[2020-01-29 21:28:04,959 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+21 job.s done
+[2020-01-29 21:28:41,351 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 21:28:41,352 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 21:28:41,645 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 21:28:41,707 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 21:44:37,555 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 21:45:37,709 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:15:56.204932 with loss = 2254.0629792779596
+[2020-01-29 21:45:41,183 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+22 job.s done
+[2020-01-29 21:46:19,001 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 21:46:19,002 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 21:46:19,289 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 21:46:19,337 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 21:55:31,960 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 21:56:24,014 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:12.959231 with loss = 2246.381054249957
+[2020-01-29 21:56:26,957 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+23 job.s done
+[2020-01-29 21:57:06,843 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 21:57:06,844 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 21:57:07,135 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 21:57:07,926 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 22:08:07,406 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 22:09:07,033 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:00.564118 with loss = 2254.911497824401
+[2020-01-29 22:09:12,887 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+24 job.s done
+[2020-01-29 22:09:45,327 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 5, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 22:09:45,328 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 22:09:45,620 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 22:09:45,658 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 22:20:18,266 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 22:21:11,102 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:32.940077 with loss = 2247.986670418318
+[2020-01-29 22:21:13,746 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+25 job.s done
+[2020-01-29 22:21:56,036 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 22:21:56,037 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 22:21:56,329 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 22:21:56,390 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 22:37:55,932 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 22:38:47,680 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:15:59.897113 with loss = 2257.4789561972257
+[2020-01-29 22:38:49,886 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+26 job.s done
+[2020-01-29 22:39:29,340 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 22:39:29,341 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 22:39:29,630 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 22:39:29,671 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 22:56:49,312 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 22:57:41,761 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:17:19.972992 with loss = 2254.223828192314
+[2020-01-29 22:57:46,098 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+27 job.s done
+[2020-01-29 22:58:24,224 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 22:58:24,225 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 22:58:24,513 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 22:58:24,552 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 23:07:57,582 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 23:08:49,920 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:33.359255 with loss = 2246.087532849388
+[2020-01-29 23:08:51,903 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+28 job.s done
+[2020-01-29 23:09:32,124 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 23:09:32,125 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 23:09:32,412 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 23:09:32,450 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 23:19:56,863 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 23:20:48,765 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:24.739813 with loss = 2247.6288773048423
+[2020-01-29 23:20:52,719 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+29 job.s done
+[2020-01-29 23:21:26,481 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 23:21:26,482 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 23:21:26,757 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 23:21:26,795 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 23:31:40,360 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 23:32:32,502 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:13.879536 with loss = 2246.817206617267
+[2020-01-29 23:32:33,497 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+30 job.s done
+[2020-01-29 23:33:14,636 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 5, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 23:33:14,637 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 23:33:14,920 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 23:33:14,961 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-29 23:50:14,321 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-29 23:51:06,460 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:16:59.686283 with loss = 2247.020070437705
+[2020-01-29 23:51:09,748 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+31 job.s done
+[2020-01-29 23:51:48,688 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-29 23:51:48,689 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-29 23:51:48,989 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-29 23:51:49,046 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 00:00:55,188 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 00:01:35,337 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:06.501428 with loss = 2254.996347524987
+[2020-01-30 00:01:40,521 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+32 job.s done
+[2020-01-30 00:02:10,342 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-30 00:02:10,343 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 00:02:10,629 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 00:02:10,668 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 00:14:57,228 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 00:15:50,535 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:12:46.887293 with loss = 2272.5032916702567
+[2020-01-30 00:15:56,412 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+33 job.s done
+[2020-01-30 00:16:31,311 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 4, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 00:16:31,312 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 00:16:31,605 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 00:16:31,669 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 00:27:19,985 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 00:28:07,956 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:48.674730 with loss = 2255.999600152938
+[2020-01-30 00:28:12,152 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+34 job.s done
+[2020-01-30 00:28:53,153 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-30 00:28:53,154 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 00:28:53,430 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 00:28:53,500 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 00:38:40,400 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 00:39:33,746 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:47.247779 with loss = 2470.4092508723934
+[2020-01-30 00:39:37,803 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+35 job.s done
+[2020-01-30 00:40:20,711 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 00:40:20,712 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 00:40:20,985 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 00:40:21,056 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 00:50:18,482 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 00:51:01,847 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:57.772389 with loss = 2248.882595747889
+[2020-01-30 00:51:03,515 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+36 job.s done
+[2020-01-30 00:51:38,487 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 00:51:38,487 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 00:51:38,771 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 00:51:38,817 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 01:01:03,992 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 01:01:56,436 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:25.506243 with loss = 2247.399575112011
+[2020-01-30 01:01:59,296 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+37 job.s done
+[2020-01-30 01:02:41,812 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 15, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-30 01:02:41,813 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 01:02:42,392 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 01:02:42,456 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 01:13:39,474 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 01:14:33,133 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:57.663156 with loss = 2265.4971929928483
+[2020-01-30 01:14:35,158 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+38 job.s done
+[2020-01-30 01:15:13,323 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 14, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-30 01:15:13,324 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 01:15:13,598 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 01:15:13,646 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 01:25:33,854 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 01:26:35,022 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:20.531620 with loss = 2395.1677109361535
+[2020-01-30 01:26:36,025 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+39 job.s done
+[2020-01-30 01:27:17,082 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 9, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-30 01:27:17,083 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 01:27:17,655 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 01:27:17,732 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 01:36:48,705 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 01:37:29,594 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:31.623830 with loss = 2274.323639173703
+[2020-01-30 01:37:31,775 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+40 job.s done
+[2020-01-30 01:38:06,040 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 01:38:06,041 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 01:38:06,315 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 01:38:06,357 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 01:51:50,475 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 01:52:38,842 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:13:44.435854 with loss = 2252.3343583060487
+[2020-01-30 01:52:42,773 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+41 job.s done
+[2020-01-30 01:53:18,017 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 64, 'n_latent': 7, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-30 01:53:18,018 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 01:53:18,143 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 01:53:18,170 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 02:04:20,248 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 02:05:16,711 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:02.231942 with loss = 2550.1142404790626
+[2020-01-30 02:05:18,641 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+42 job.s done
+[2020-01-30 02:06:07,399 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-30 02:06:07,400 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 02:06:07,682 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 02:06:07,741 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 02:22:28,598 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 02:23:31,803 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:16:21.199823 with loss = 2278.9746023069965
+[2020-01-30 02:23:34,961 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+43 job.s done
+[2020-01-30 02:24:16,308 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 15, 'n_layers': 1, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 02:24:16,309 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 02:24:16,435 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 02:24:16,471 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 02:32:27,008 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 02:33:03,246 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:10.700913 with loss = 2265.752918748923
+[2020-01-30 02:33:05,601 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+44 job.s done
+[2020-01-30 02:33:41,712 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 5, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-30 02:33:41,713 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 02:33:42,294 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 02:33:42,363 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 02:44:40,992 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 02:45:34,760 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:59.282886 with loss = 2268.95505288213
+[2020-01-30 02:45:36,447 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+45 job.s done
+[2020-01-30 02:46:18,945 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-30 02:46:18,945 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 02:46:19,223 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 02:46:19,291 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 02:57:29,147 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 02:58:26,508 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:10.203489 with loss = 2324.5778988238844
+[2020-01-30 02:58:32,309 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+46 job.s done
+[2020-01-30 02:59:13,788 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 02:59:13,789 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 02:59:13,917 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 02:59:13,944 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 03:14:20,876 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 03:15:02,511 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:15:07.089674 with loss = 2257.284152593486
+[2020-01-30 03:15:08,358 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+47 job.s done
+[2020-01-30 03:15:53,960 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 256, 'n_latent': 6, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-30 03:15:53,961 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 03:15:54,527 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 03:15:54,637 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 03:26:21,571 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 03:27:11,947 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:27.611593 with loss = 2264.29758987808
+[2020-01-30 03:27:14,138 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+48 job.s done
+[2020-01-30 03:27:55,119 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 14, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-30 03:27:55,120 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 03:27:55,411 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 03:27:55,481 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 03:40:49,348 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 03:41:54,064 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:12:54.230360 with loss = 2406.858738206531
+[2020-01-30 03:42:00,040 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+49 job.s done
+[2020-01-30 03:42:39,495 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 12, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-30 03:42:39,496 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 03:42:39,769 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 03:42:39,837 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 03:53:07,562 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 03:54:00,299 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:28.067768 with loss = 2319.901753403412
+[2020-01-30 03:54:05,795 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+50 job.s done
+[2020-01-30 03:54:42,992 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 64, 'n_latent': 9, 'n_layers': 4, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 03:54:42,993 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 03:54:43,124 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 03:54:43,163 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 04:09:36,757 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 04:10:25,033 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:14:53.765664 with loss = 2271.178346598742
+[2020-01-30 04:10:26,764 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+51 job.s done
+[2020-01-30 04:11:09,782 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 11, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-30 04:11:09,783 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 04:11:10,356 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 04:11:10,467 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 04:22:05,414 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 04:23:03,439 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:55.633027 with loss = 2283.340601036102
+[2020-01-30 04:23:07,544 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+52 job.s done
+[2020-01-30 04:23:47,064 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 04:23:47,065 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 04:23:47,345 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 04:23:47,403 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 04:34:32,103 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 04:35:24,884 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:45.040493 with loss = 2272.3749421096845
+[2020-01-30 04:35:28,413 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+53 job.s done
+[2020-01-30 04:36:10,879 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-30 04:36:10,880 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 04:36:11,137 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 04:36:11,192 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 04:46:00,984 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 04:46:50,216 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:50.106210 with loss = 2304.6495306845595
+[2020-01-30 04:46:54,196 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+54 job.s done
+[2020-01-30 04:47:37,348 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 12, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-30 04:47:37,349 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 04:47:37,485 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 04:47:37,525 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 05:01:45,114 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 05:02:36,525 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:14:07.766573 with loss = 2308.6473012342753
+[2020-01-30 05:02:40,180 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+55 job.s done
+[2020-01-30 05:03:25,103 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 15, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 05:03:25,104 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 05:03:25,392 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 05:03:25,463 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 05:13:18,299 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 05:14:10,120 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:53.197044 with loss = 2252.04866421463
+[2020-01-30 05:14:15,893 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+56 job.s done
+[2020-01-30 05:15:00,872 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 256, 'n_latent': 10, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-30 05:15:00,873 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 05:15:01,487 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 05:15:01,601 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 05:26:00,392 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 05:27:00,801 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:59.521289 with loss = 2378.7100556824057
+[2020-01-30 05:27:06,685 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+57 job.s done
+[2020-01-30 05:27:36,042 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 05:27:36,043 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 05:27:36,307 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 05:27:36,350 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 05:36:23,462 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 05:37:14,560 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:47.421731 with loss = 2241.4712944813027
+[2020-01-30 05:37:17,333 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+58 job.s done
+[2020-01-30 05:37:49,153 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 8, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-30 05:37:49,154 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 05:37:49,441 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 05:37:49,487 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 05:47:22,374 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 05:48:17,389 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:33.224623 with loss = 2308.7656236537136
+[2020-01-30 05:48:23,098 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+59 job.s done
+[2020-01-30 05:48:59,085 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 6, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-30 05:48:59,086 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 05:48:59,237 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 05:48:59,276 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 05:59:59,194 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 06:00:49,048 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:00.110320 with loss = 2316.4759782117007
+[2020-01-30 06:00:53,891 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+60 job.s done
+[2020-01-30 06:01:35,850 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 11, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 06:01:35,851 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 06:01:36,138 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 06:01:36,195 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 06:10:24,574 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 06:11:16,080 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:48.725613 with loss = 2251.421255708254
+[2020-01-30 06:11:19,676 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+61 job.s done
+[2020-01-30 06:11:50,191 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-30 06:11:50,192 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 06:11:50,491 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 06:11:50,532 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 06:19:52,330 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 06:20:39,491 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:02.139926 with loss = 2258.6656147682233
+[2020-01-30 06:20:40,281 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+62 job.s done
+[2020-01-30 06:21:18,740 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 6, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 06:21:18,741 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 06:21:19,352 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 06:21:19,418 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 06:30:59,993 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 06:31:52,784 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:41.254442 with loss = 2252.5970685959846
+[2020-01-30 06:31:56,045 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+63 job.s done
+[2020-01-30 06:32:35,174 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 06:32:35,175 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 06:32:35,468 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 06:32:35,525 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 06:43:39,134 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 06:44:38,243 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:03.961281 with loss = 2247.4678708749784
+[2020-01-30 06:44:41,873 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+64 job.s done
+[2020-01-30 06:45:18,662 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-30 06:45:18,663 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 06:45:18,984 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 06:45:19,041 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 06:54:35,652 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 06:55:15,651 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:16.991312 with loss = 2400.703612355678
+[2020-01-30 06:55:17,611 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+65 job.s done
+[2020-01-30 06:56:04,362 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 5, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 06:56:04,363 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 06:56:04,658 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 06:56:04,712 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 07:05:38,071 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 07:06:29,940 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:33.710208 with loss = 2246.7394437683097
+[2020-01-30 07:06:33,262 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+66 job.s done
+[2020-01-30 07:07:13,392 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 07:07:13,393 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 07:07:13,666 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 07:07:13,706 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 07:17:06,206 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 07:17:57,552 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:52.815019 with loss = 2246.1460303399103
+[2020-01-30 07:17:58,945 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+67 job.s done
+[2020-01-30 07:18:41,018 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.3, 'n_hidden': 128, 'n_latent': 9, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 07:18:41,019 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 07:18:41,301 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 07:18:41,361 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 07:27:52,160 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 07:28:43,393 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:11.142625 with loss = 2249.690770129674
+[2020-01-30 07:28:44,575 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+68 job.s done
+[2020-01-30 07:29:25,444 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 07:29:25,445 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 07:29:25,724 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 07:29:25,778 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 07:39:06,633 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 07:39:58,899 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:41.190011 with loss = 2244.974781363088
+[2020-01-30 07:40:00,229 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+69 job.s done
+[2020-01-30 07:40:41,886 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 07:40:41,887 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 07:40:42,186 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 07:40:42,240 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 07:50:17,402 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 07:51:09,317 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:35.516797 with loss = 2246.1335435335172
+[2020-01-30 07:51:10,864 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+70 job.s done
+[2020-01-30 07:51:52,262 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 07:51:52,263 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 07:51:52,546 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 07:51:52,604 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 08:01:16,019 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 08:02:07,682 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:23.757985 with loss = 2244.8543358499915
+[2020-01-30 08:02:11,504 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+71 job.s done
+[2020-01-30 08:02:50,444 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 08:02:50,445 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 08:02:50,728 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 08:02:50,784 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 08:12:55,886 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 08:13:47,773 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:05.443232 with loss = 2251.4316113432706
+[2020-01-30 08:13:52,175 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+72 job.s done
+[2020-01-30 08:14:30,349 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 08:14:30,350 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 08:14:30,653 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 08:14:30,707 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 08:23:31,421 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 08:24:23,263 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:01.072962 with loss = 2245.2061864552816
+[2020-01-30 08:24:27,774 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+73 job.s done
+[2020-01-30 08:25:06,725 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 08:25:06,726 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 08:25:07,029 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 08:25:07,082 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 08:34:16,275 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 08:35:08,367 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:09.551307 with loss = 2248.64432728761
+[2020-01-30 08:35:13,375 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+74 job.s done
+[2020-01-30 08:35:48,645 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-30 08:35:48,647 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 08:35:48,938 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 08:35:48,995 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 08:46:00,194 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 08:46:55,886 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:11.549650 with loss = 2303.426425448044
+[2020-01-30 08:46:59,049 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+75 job.s done
+[2020-01-30 08:47:37,649 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 08:47:37,650 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 08:47:37,925 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 08:47:37,984 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 08:59:02,324 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 09:00:05,803 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:24.675861 with loss = 2246.4930154661383
+[2020-01-30 09:00:09,790 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+76 job.s done
+[2020-01-30 09:00:49,165 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 64, 'n_latent': 14, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-30 09:00:49,166 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 09:00:49,311 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 09:00:49,345 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 09:09:36,704 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 09:10:28,608 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:47.539585 with loss = 2312.125941054196
+[2020-01-30 09:10:30,335 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+77 job.s done
+[2020-01-30 09:11:13,431 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 2, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 09:11:13,432 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 09:11:13,718 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 09:11:13,774 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 09:21:11,251 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 09:22:02,546 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:09:57.820912 with loss = 2244.4934476240737
+[2020-01-30 09:22:06,126 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+78 job.s done
+[2020-01-30 09:22:44,586 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 6, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-30 09:22:44,587 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 09:22:45,220 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 09:22:45,282 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 09:31:41,418 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 09:32:30,795 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:56.832811 with loss = 2255.6274556264
+[2020-01-30 09:32:31,898 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+79 job.s done
+[2020-01-30 09:33:18,855 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 09:33:18,856 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 09:33:19,161 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 09:33:19,204 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 09:44:34,104 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 09:45:33,873 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:15.250033 with loss = 2244.4791204441667
+[2020-01-30 09:45:37,745 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+80 job.s done
+[2020-01-30 09:46:21,405 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 12, 'n_layers': 2, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-30 09:46:21,406 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 09:46:21,685 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 09:46:21,725 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 09:55:18,339 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 09:55:57,841 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:56.935044 with loss = 2378.5480503080303
+[2020-01-30 09:56:03,457 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+81 job.s done
+[2020-01-30 09:56:42,794 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 64, 'n_latent': 15, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 09:56:42,795 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 09:56:42,940 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 09:56:42,969 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 10:07:42,458 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 10:08:41,141 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:59.664727 with loss = 2337.1328273091503
+[2020-01-30 10:08:44,351 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+82 job.s done
+[2020-01-30 10:09:32,317 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-30 10:09:32,318 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 10:09:32,614 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 10:09:32,674 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 10:20:43,479 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 10:21:42,864 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:11.163537 with loss = 2307.441429810012
+[2020-01-30 10:21:45,090 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+83 job.s done
+[2020-01-30 10:22:25,988 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 13, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 10:22:25,989 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 10:22:26,285 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 10:22:26,341 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 10:33:25,089 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 10:34:24,588 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:59.102410 with loss = 2257.138235341634
+[2020-01-30 10:34:25,864 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+84 job.s done
+[2020-01-30 10:35:09,007 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 5, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-30 10:35:09,008 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 10:35:09,611 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 10:35:09,713 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 10:45:41,445 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 10:46:43,416 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:32.438998 with loss = 2295.8582656600033
+[2020-01-30 10:46:46,594 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+85 job.s done
+[2020-01-30 10:47:29,171 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 11, 'n_layers': 4, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-30 10:47:29,172 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 10:47:29,441 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 10:47:29,497 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 10:57:42,637 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 10:58:29,959 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:13.466831 with loss = 2317.748816614251
+[2020-01-30 10:58:32,280 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+86 job.s done
+[2020-01-30 10:59:10,214 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 10:59:10,215 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 10:59:10,494 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 10:59:10,550 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 11:09:45,506 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 11:10:45,861 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:35.292731 with loss = 2245.8959401387215
+[2020-01-30 11:10:47,995 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+87 job.s done
+[2020-01-30 11:11:28,316 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 14, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-30 11:11:28,316 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 11:11:28,443 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 11:11:28,479 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 11:22:01,644 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 11:23:00,627 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:33.329510 with loss = 2481.3181853674823
+[2020-01-30 11:23:03,733 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+88 job.s done
+[2020-01-30 11:23:44,949 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 11:23:44,951 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 11:23:45,231 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 11:23:45,289 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 11:34:13,005 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 11:35:13,037 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:28.057058 with loss = 2247.5473071579354
+[2020-01-30 11:35:14,433 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+89 job.s done
+[2020-01-30 11:35:59,884 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 9, 'n_layers': 3, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.001, 'n_epochs': 30}
+[2020-01-30 11:35:59,885 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 11:36:00,451 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 11:36:00,545 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 11:46:13,571 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 11:46:59,981 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:13.688085 with loss = 2282.5109991599174
+[2020-01-30 11:47:05,100 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+90 job.s done
+[2020-01-30 11:47:39,481 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 7, 'n_layers': 5, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 11:47:39,482 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 11:47:39,762 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 11:47:39,822 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 11:59:21,660 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 12:00:24,611 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:42.180260 with loss = 2309.0370605721178
+[2020-01-30 12:00:25,861 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+91 job.s done
+[2020-01-30 12:01:08,272 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 6, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0005, 'n_epochs': 30}
+[2020-01-30 12:01:08,273 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 12:01:08,566 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 12:01:08,610 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 12:09:57,522 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 12:10:46,972 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:08:49.250189 with loss = 2312.028530501465
+[2020-01-30 12:10:51,418 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+92 job.s done
+[2020-01-30 12:11:31,963 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.5, 'n_hidden': 64, 'n_latent': 12, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 12:11:31,964 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 12:11:32,091 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 12:11:32,127 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 12:22:38,023 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 12:23:38,460 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:06.061092 with loss = 2289.3232325952094
+[2020-01-30 12:23:42,178 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+93 job.s done
+[2020-01-30 12:24:24,623 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 15, 'n_layers': 3, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.005, 'n_epochs': 30}
+[2020-01-30 12:24:24,624 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 12:24:24,897 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 12:24:24,953 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 12:35:40,212 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 12:36:36,574 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:11:15.589625 with loss = 2252.4353270937445
+[2020-01-30 12:36:37,918 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+94 job.s done
+[2020-01-30 12:37:16,541 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 128, 'n_latent': 10, 'n_layers': 5, 'reconstruction_loss': 'nb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-30 12:37:16,542 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 12:37:16,827 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 12:37:16,891 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 12:48:07,174 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Finished training
+[2020-01-30 12:48:58,310 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Training of 32 epochs finished in 0:10:50.633677 with loss = 2258.137648360762
+[2020-01-30 12:49:03,614 - MainProcess - Progress Listener] INFO - scvi.inference.autotune.all
+95 job.s done
+[2020-01-30 12:49:44,249 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.1, 'n_hidden': 256, 'n_latent': 13, 'n_layers': 4, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.0001, 'n_epochs': 30}
+[2020-01-30 12:49:44,250 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-30 12:49:44,912 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-30 12:49:45,009 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-30 12:59:23,377 - Worker GPU 0:0 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('interrupted at shutdown',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1097, in run_one
+    result = worker_fn(spec, ctrl)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/base.py", line 856, in evaluate
+    rval = self.fn(pyll_rval)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1237, in _objective_function
+    trainer.train(**train_func_tunable_kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/trainer.py", line 160, in train
+    if not self.on_epoch_end():
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/trainer.py", line 179, in on_epoch_end
+    self.compute_metrics()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 49, in decorate_no_grad
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/trainer.py", line 124, in compute_metrics
+    result = getattr(posterior, metric)()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 49, in decorate_no_grad
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/posterior.py", line 169, in elbo
+    elbo = compute_elbo(self.model, self)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/models/log_likelihood.py", line 22, in compute_elbo
+    for i_batch, tensors in enumerate(posterior):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/torch/utils/data/dataloader.py", line 346, in __next__
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/torch/utils/data/_utils/fetch.py", line 47, in fetch
+    return self.collate_fn(data)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/dataset/dataset.py", line 758, in collate_fn_base
+    for attr, dtype in attributes_and_types.items()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/dataset/dataset.py", line 758, in <listcomp>
+    for attr, dtype in attributes_and_types.items()
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1384, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 852, in _update
+    retryable_write=retryable_write)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 822, in _update
+    retryable_write=retryable_write).copy()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 618, in command
+    self._raise_connection_failure(error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 613, in command
+    user_fields=user_fields)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/network.py", line 167, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/helpers.py", line 136, in _check_command_response
+    raise NotMasterError(errmsg, response)
+pymongo.errors.NotMasterError: interrupted at shutdown
+[2020-01-30 12:59:26,396 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+fmin finished.
+[2020-01-30 12:59:29,663 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+All workers have died, check stdout/stderr for error tracebacks.
+[2020-01-30 12:59:29,666 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Worker watchdog finished, terminating workers and stopping listener.
+[2020-01-31 18:37:03,778 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting experiment: dataset
+[2020-01-31 18:37:03,780 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Using default parameter search space.
+[2020-01-31 18:37:03,782 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Adding default early stopping behaviour.
+[2020-01-31 18:37:03,784 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Fixed parameters: 
+model: 
+{}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo']}
+train method: 
+{'n_epochs': 5}
+[2020-01-31 18:37:03,785 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting parallel hyperoptimization
+[2020-01-31 18:37:03,792 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting MongoDb process, logs redirected to ./mongo/mongo_logfile.txt.
+[2020-01-31 18:37:09,590 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting minimization procedure
+[2020-01-31 18:37:09,595 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+Starting FminProcess.
+[2020-01-31 18:37:09,595 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting worker launcher
+[2020-01-31 18:37:09,598 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+gpu_ids is None, defaulting to all 1 GPUs found by torch.
+[2020-01-31 18:37:09,601 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Some GPU.s found and n_cpu_wokers is None, defaulting to n_cpu_workers = 0
+[2020-01-31 18:37:36,463 - MainProcess - Progress Listener] DEBUG - scvi.inference.autotune.all
+Listener listening...
+[2020-01-31 18:37:36,468 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 1 worker.s for each of the 1 gpu.s set for use/found.
+[2020-01-31 18:37:36,948 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 0 cpu worker.s
+[2020-01-31 18:37:41,289 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:37:41,290 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:38:01,515 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+No timer, waiting for fmin...
+[2020-01-31 18:38:01,124 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:38:01,126 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating MongoTrials object.
+[2020-01-31 18:38:01,166 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Calling fmin.
+[2020-01-31 18:38:25,748 - Worker GPU 0:0 - MainThread] INFO - scvi.inference.autotune.all
+Parameters being tested: 
+model: 
+{'dropout_rate': 0.7, 'n_hidden': 128, 'n_latent': 5, 'n_layers': 1, 'reconstruction_loss': 'zinb'}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo'], 'use_cuda': True, 'show_progbar': False, 'frequency': 1}
+train method: 
+{'lr': 0.01, 'n_epochs': 30}
+[2020-01-31 18:38:25,749 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating model
+[2020-01-31 18:38:26,067 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating trainer
+[2020-01-31 18:38:29,056 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Starting training
+[2020-01-31 18:38:32,024 - Worker GPU 0:0 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('interrupted at shutdown',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1097, in run_one
+    result = worker_fn(spec, ctrl)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/base.py", line 856, in evaluate
+    rval = self.fn(pyll_rval)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1237, in _objective_function
+    trainer.train(**train_func_tunable_kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/trainer.py", line 142, in train
+    self.compute_metrics()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 49, in decorate_no_grad
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/trainer.py", line 124, in compute_metrics
+    result = getattr(posterior, metric)()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/torch/autograd/grad_mode.py", line 49, in decorate_no_grad
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/posterior.py", line 169, in elbo
+    elbo = compute_elbo(self.model, self)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/models/log_likelihood.py", line 32, in compute_elbo
+    **kwargs
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/torch/nn/modules/module.py", line 541, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/models/vae.py", line 243, in forward
+    outputs = self.inference(x, batch_index, y)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/models/vae.py", line 192, in inference
+    qz_m, qz_v, z = self.z_encoder(x_, y)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/torch/nn/modules/module.py", line 541, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/models/modules.py", line 172, in forward
+    q = self.encoder(x, *cat_list)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/torch/nn/modules/module.py", line 541, in __call__
+    result = self.forward(*input, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/models/modules.py", line 116, in forward
+    x = torch.cat((x, *one_hot_cat_list), dim=-1)
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1384, in _retry_with_session
+    return func(session, sock_info, retryable)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 852, in _update
+    retryable_write=retryable_write)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 822, in _update
+    retryable_write=retryable_write).copy()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 618, in command
+    self._raise_connection_failure(error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 613, in command
+    user_fields=user_fields)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/network.py", line 167, in command
+    parse_write_concern_error=parse_write_concern_error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/helpers.py", line 136, in _check_command_response
+    raise NotMasterError(errmsg, response)
+pymongo.errors.NotMasterError: interrupted at shutdown
+[2020-01-31 18:38:34,079 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+All workers have died, check stdout/stderr for error tracebacks.
+[2020-01-31 18:38:34,082 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Worker watchdog finished, terminating workers and stopping listener.
+[2020-01-31 18:38:41,566 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+fmin finished.
+[2020-01-31 18:39:08,771 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting experiment: dataset
+[2020-01-31 18:39:08,771 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting experiment: dataset
+[2020-01-31 18:39:08,772 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Using default parameter search space.
+[2020-01-31 18:39:08,772 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Using default parameter search space.
+[2020-01-31 18:39:08,775 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Adding default early stopping behaviour.
+[2020-01-31 18:39:08,775 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Adding default early stopping behaviour.
+[2020-01-31 18:39:08,777 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Fixed parameters: 
+model: 
+{}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo']}
+train method: 
+{'n_epochs': 5}
+[2020-01-31 18:39:08,777 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Fixed parameters: 
+model: 
+{}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo']}
+train method: 
+{'n_epochs': 5}
+[2020-01-31 18:39:08,779 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting parallel hyperoptimization
+[2020-01-31 18:39:08,779 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting parallel hyperoptimization
+[2020-01-31 18:39:08,783 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting MongoDb process, logs redirected to ./mongo/mongo_logfile.txt.
+[2020-01-31 18:39:08,783 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting MongoDb process, logs redirected to ./mongo/mongo_logfile.txt.
+[2020-01-31 18:39:14,540 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting minimization procedure
+[2020-01-31 18:39:14,540 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting minimization procedure
+[2020-01-31 18:39:14,545 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+Starting FminProcess.
+[2020-01-31 18:39:14,545 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+Starting FminProcess.
+[2020-01-31 18:39:14,546 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting worker launcher
+[2020-01-31 18:39:14,546 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting worker launcher
+[2020-01-31 18:39:14,550 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+gpu_ids is None, defaulting to all 1 GPUs found by torch.
+[2020-01-31 18:39:14,550 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+gpu_ids is None, defaulting to all 1 GPUs found by torch.
+[2020-01-31 18:39:38,031 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Some GPU.s found and n_cpu_wokers is None, defaulting to n_cpu_workers = 0
+[2020-01-31 18:39:38,031 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Some GPU.s found and n_cpu_wokers is None, defaulting to n_cpu_workers = 0
+[2020-01-31 18:39:38,045 - MainProcess - Progress Listener] DEBUG - scvi.inference.autotune.all
+Listener listening...
+[2020-01-31 18:39:38,045 - MainProcess - Progress Listener] DEBUG - scvi.inference.autotune.all
+Listener listening...
+[2020-01-31 18:39:38,045 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 4 worker.s for each of the 1 gpu.s set for use/found.
+[2020-01-31 18:39:38,045 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 4 worker.s for each of the 1 gpu.s set for use/found.
+[2020-01-31 18:39:39,969 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 0 cpu worker.s
+[2020-01-31 18:39:39,969 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 0 cpu worker.s
+[2020-01-31 18:39:42,919 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:39:42,919 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:39:42,919 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:39:42,919 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:39:42,929 - Worker GPU 0:1 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:39:42,929 - Worker GPU 0:1 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:39:42,929 - Worker GPU 0:1 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:39:42,929 - Worker GPU 0:1 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:39:43,399 - Worker GPU 0:2 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:39:43,399 - Worker GPU 0:2 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:39:43,400 - Worker GPU 0:2 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:39:43,400 - Worker GPU 0:2 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:39:43,947 - Worker GPU 0:3 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:39:43,947 - Worker GPU 0:3 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:39:43,948 - Worker GPU 0:3 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:39:43,948 - Worker GPU 0:3 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:40:04,543 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+No timer, waiting for fmin...
+[2020-01-31 18:40:04,543 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+No timer, waiting for fmin...
+[2020-01-31 18:40:04,152 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:40:04,152 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:40:04,153 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating MongoTrials object.
+[2020-01-31 18:40:04,153 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating MongoTrials object.
+[2020-01-31 18:40:04,194 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Calling fmin.
+[2020-01-31 18:40:04,194 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Calling fmin.
+[2020-01-31 18:42:44,704 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+fmin finished.
+[2020-01-31 18:42:44,704 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+fmin finished.
+[2020-01-31 18:42:51,340 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting experiment: dataset
+[2020-01-31 18:42:51,340 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting experiment: dataset
+[2020-01-31 18:42:51,340 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting experiment: dataset
+[2020-01-31 18:42:51,343 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Using default parameter search space.
+[2020-01-31 18:42:51,343 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Using default parameter search space.
+[2020-01-31 18:42:51,343 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Using default parameter search space.
+[2020-01-31 18:42:51,349 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Adding default early stopping behaviour.
+[2020-01-31 18:42:51,349 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Adding default early stopping behaviour.
+[2020-01-31 18:42:51,349 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Adding default early stopping behaviour.
+[2020-01-31 18:42:51,382 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Fixed parameters: 
+model: 
+{}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo']}
+train method: 
+{'n_epochs': 5}
+[2020-01-31 18:42:51,382 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Fixed parameters: 
+model: 
+{}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo']}
+train method: 
+{'n_epochs': 5}
+[2020-01-31 18:42:51,382 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Fixed parameters: 
+model: 
+{}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo']}
+train method: 
+{'n_epochs': 5}
+[2020-01-31 18:42:51,394 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting parallel hyperoptimization
+[2020-01-31 18:42:51,394 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting parallel hyperoptimization
+[2020-01-31 18:42:51,394 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting parallel hyperoptimization
+[2020-01-31 18:42:51,420 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting MongoDb process, logs redirected to ./mongo/mongo_logfile.txt.
+[2020-01-31 18:42:51,420 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting MongoDb process, logs redirected to ./mongo/mongo_logfile.txt.
+[2020-01-31 18:42:51,420 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting MongoDb process, logs redirected to ./mongo/mongo_logfile.txt.
+[2020-01-31 18:42:53,695 - Worker GPU 0:1 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('localhost:1234: [Errno 111] Connection refused',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1087, in run_one
+    domain = pickler.loads(blob)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 172, in _new_Index
+    def _new_Index(cls, d):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1382, in _retry_with_session
+    raise last_error
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1377, in _retry_with_session
+    with self._get_socket(server, session) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1222, in _get_socket
+    self.__all_credentials, checkout=exhaust) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1135, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1187, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1098, in connect
+    _raise_connection_failure(self.address, error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 290, in _raise_connection_failure
+    raise AutoReconnect(msg)
+pymongo.errors.AutoReconnect: localhost:1234: [Errno 111] Connection refused
+[2020-01-31 18:42:53,695 - Worker GPU 0:1 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('localhost:1234: [Errno 111] Connection refused',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1087, in run_one
+    domain = pickler.loads(blob)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 172, in _new_Index
+    def _new_Index(cls, d):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1382, in _retry_with_session
+    raise last_error
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1377, in _retry_with_session
+    with self._get_socket(server, session) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1222, in _get_socket
+    self.__all_credentials, checkout=exhaust) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1135, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1187, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1098, in connect
+    _raise_connection_failure(self.address, error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 290, in _raise_connection_failure
+    raise AutoReconnect(msg)
+pymongo.errors.AutoReconnect: localhost:1234: [Errno 111] Connection refused
+[2020-01-31 18:42:53,695 - Worker GPU 0:1 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('localhost:1234: [Errno 111] Connection refused',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1087, in run_one
+    domain = pickler.loads(blob)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 172, in _new_Index
+    def _new_Index(cls, d):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1382, in _retry_with_session
+    raise last_error
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1377, in _retry_with_session
+    with self._get_socket(server, session) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1222, in _get_socket
+    self.__all_credentials, checkout=exhaust) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1135, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1187, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1098, in connect
+    _raise_connection_failure(self.address, error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 290, in _raise_connection_failure
+    raise AutoReconnect(msg)
+pymongo.errors.AutoReconnect: localhost:1234: [Errno 111] Connection refused
+[2020-01-31 18:42:53,952 - Worker GPU 0:2 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('localhost:1234: [Errno 111] Connection refused',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1087, in run_one
+    domain = pickler.loads(blob)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 172, in _new_Index
+    def _new_Index(cls, d):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1382, in _retry_with_session
+    raise last_error
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1377, in _retry_with_session
+    with self._get_socket(server, session) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1222, in _get_socket
+    self.__all_credentials, checkout=exhaust) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1135, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1187, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1098, in connect
+    _raise_connection_failure(self.address, error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 290, in _raise_connection_failure
+    raise AutoReconnect(msg)
+pymongo.errors.AutoReconnect: localhost:1234: [Errno 111] Connection refused
+[2020-01-31 18:42:53,952 - Worker GPU 0:2 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('localhost:1234: [Errno 111] Connection refused',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1087, in run_one
+    domain = pickler.loads(blob)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 172, in _new_Index
+    def _new_Index(cls, d):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1382, in _retry_with_session
+    raise last_error
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1377, in _retry_with_session
+    with self._get_socket(server, session) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1222, in _get_socket
+    self.__all_credentials, checkout=exhaust) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1135, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1187, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1098, in connect
+    _raise_connection_failure(self.address, error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 290, in _raise_connection_failure
+    raise AutoReconnect(msg)
+pymongo.errors.AutoReconnect: localhost:1234: [Errno 111] Connection refused
+[2020-01-31 18:42:53,952 - Worker GPU 0:2 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('localhost:1234: [Errno 111] Connection refused',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1087, in run_one
+    domain = pickler.loads(blob)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 172, in _new_Index
+    def _new_Index(cls, d):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1382, in _retry_with_session
+    raise last_error
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1377, in _retry_with_session
+    with self._get_socket(server, session) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1222, in _get_socket
+    self.__all_credentials, checkout=exhaust) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1135, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1187, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1098, in connect
+    _raise_connection_failure(self.address, error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 290, in _raise_connection_failure
+    raise AutoReconnect(msg)
+pymongo.errors.AutoReconnect: localhost:1234: [Errno 111] Connection refused
+[2020-01-31 18:42:54,042 - Worker GPU 0:0 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('localhost:1234: [Errno 111] Connection refused',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1087, in run_one
+    domain = pickler.loads(blob)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 172, in _new_Index
+    def _new_Index(cls, d):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1382, in _retry_with_session
+    raise last_error
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1377, in _retry_with_session
+    with self._get_socket(server, session) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1222, in _get_socket
+    self.__all_credentials, checkout=exhaust) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1135, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1187, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1098, in connect
+    _raise_connection_failure(self.address, error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 290, in _raise_connection_failure
+    raise AutoReconnect(msg)
+pymongo.errors.AutoReconnect: localhost:1234: [Errno 111] Connection refused
+[2020-01-31 18:42:54,042 - Worker GPU 0:0 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('localhost:1234: [Errno 111] Connection refused',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1087, in run_one
+    domain = pickler.loads(blob)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 172, in _new_Index
+    def _new_Index(cls, d):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1382, in _retry_with_session
+    raise last_error
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1377, in _retry_with_session
+    with self._get_socket(server, session) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1222, in _get_socket
+    self.__all_credentials, checkout=exhaust) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1135, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1187, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1098, in connect
+    _raise_connection_failure(self.address, error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 290, in _raise_connection_failure
+    raise AutoReconnect(msg)
+pymongo.errors.AutoReconnect: localhost:1234: [Errno 111] Connection refused
+[2020-01-31 18:42:54,042 - Worker GPU 0:0 - MainThread] ERROR - scvi.inference.autotune.all
+Caught ('localhost:1234: [Errno 111] Connection refused',) in run, starting cleanup.
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1087, in run_one
+    domain = pickler.loads(blob)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pandas/core/indexes/base.py", line 172, in _new_Index
+    def _new_Index(cls, d):
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 165, in decorated
+    return func(*args, **kwargs)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/scvi/inference/autotune.py", line 1122, in run
+    mworker.run_one(reserve_timeout=float(self.reserve_timeout))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1103, in run_one
+    ctrl.checkpoint()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 1157, in checkpoint
+    handle.refresh(self.current_trial)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 500, in refresh
+    self.update(doc, dict(refresh_time=coarse_utcnow()))
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/hyperopt/mongoexp.py", line 538, in update
+    multi=False,)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 3215, in update
+    write_concern, collation=collation)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/collection.py", line 856, in _update_retryable
+    _update, session)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1491, in _retryable_write
+    return self._retry_with_session(retryable, func, s, None)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1382, in _retry_with_session
+    raise last_error
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1377, in _retry_with_session
+    with self._get_socket(server, session) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/mongo_client.py", line 1222, in _get_socket
+    self.__all_credentials, checkout=exhaust) as sock_info:
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/contextlib.py", line 81, in __enter__
+    return next(self.gen)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1135, in get_socket
+    sock_info = self._get_socket_no_auth()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1187, in _get_socket_no_auth
+    sock_info = self.connect()
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 1098, in connect
+    _raise_connection_failure(self.address, error)
+  File "/home/zach/miniconda3/envs/pytorch/lib/python3.6/site-packages/pymongo/pool.py", line 290, in _raise_connection_failure
+    raise AutoReconnect(msg)
+pymongo.errors.AutoReconnect: localhost:1234: [Errno 111] Connection refused
+[2020-01-31 18:42:55,700 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+All workers have died, check stdout/stderr for error tracebacks.
+[2020-01-31 18:42:55,700 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+All workers have died, check stdout/stderr for error tracebacks.
+[2020-01-31 18:42:55,700 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+All workers have died, check stdout/stderr for error tracebacks.
+[2020-01-31 18:42:55,704 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Worker watchdog finished, terminating workers and stopping listener.
+[2020-01-31 18:42:55,704 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Worker watchdog finished, terminating workers and stopping listener.
+[2020-01-31 18:42:55,704 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Worker watchdog finished, terminating workers and stopping listener.
+[2020-01-31 18:42:57,250 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting minimization procedure
+[2020-01-31 18:42:57,250 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting minimization procedure
+[2020-01-31 18:42:57,250 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting minimization procedure
+[2020-01-31 18:42:57,253 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+Starting FminProcess.
+[2020-01-31 18:42:57,253 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+Starting FminProcess.
+[2020-01-31 18:42:57,254 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting worker launcher
+[2020-01-31 18:42:57,253 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+Starting FminProcess.
+[2020-01-31 18:42:57,254 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting worker launcher
+[2020-01-31 18:42:57,254 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting worker launcher
+[2020-01-31 18:42:57,257 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+gpu_ids is None, defaulting to all 1 GPUs found by torch.
+[2020-01-31 18:42:57,257 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+gpu_ids is None, defaulting to all 1 GPUs found by torch.
+[2020-01-31 18:42:57,257 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+gpu_ids is None, defaulting to all 1 GPUs found by torch.
+[2020-01-31 18:43:17,952 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Some GPU.s found and n_cpu_wokers is None, defaulting to n_cpu_workers = 0
+[2020-01-31 18:43:17,952 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Some GPU.s found and n_cpu_wokers is None, defaulting to n_cpu_workers = 0
+[2020-01-31 18:43:17,952 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Some GPU.s found and n_cpu_wokers is None, defaulting to n_cpu_workers = 0
+[2020-01-31 18:43:17,962 - MainProcess - Progress Listener] DEBUG - scvi.inference.autotune.all
+Listener listening...
+[2020-01-31 18:43:17,962 - MainProcess - Progress Listener] DEBUG - scvi.inference.autotune.all
+Listener listening...
+[2020-01-31 18:43:17,963 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 1 worker.s for each of the 1 gpu.s set for use/found.
+[2020-01-31 18:43:17,962 - MainProcess - Progress Listener] DEBUG - scvi.inference.autotune.all
+Listener listening...
+[2020-01-31 18:43:17,963 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 1 worker.s for each of the 1 gpu.s set for use/found.
+[2020-01-31 18:43:17,963 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 1 worker.s for each of the 1 gpu.s set for use/found.
+[2020-01-31 18:43:18,418 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 0 cpu worker.s
+[2020-01-31 18:43:18,418 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 0 cpu worker.s
+[2020-01-31 18:43:18,418 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 0 cpu worker.s
+[2020-01-31 18:43:22,756 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:43:22,756 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:43:22,756 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:43:22,756 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:43:22,756 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:43:22,756 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:43:38,829 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:43:38,829 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:43:38,829 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:43:39,168 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+No timer, waiting for fmin...
+[2020-01-31 18:43:39,168 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+No timer, waiting for fmin...
+[2020-01-31 18:43:39,168 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+No timer, waiting for fmin...
+[2020-01-31 18:43:38,831 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating MongoTrials object.
+[2020-01-31 18:43:38,831 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating MongoTrials object.
+[2020-01-31 18:43:38,831 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating MongoTrials object.
+[2020-01-31 18:43:38,872 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Calling fmin.
+[2020-01-31 18:43:38,872 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Calling fmin.
+[2020-01-31 18:43:38,872 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Calling fmin.
+[2020-01-31 18:43:53,588 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+All workers have died, check stdout/stderr for error tracebacks.
+[2020-01-31 18:43:53,588 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+All workers have died, check stdout/stderr for error tracebacks.
+[2020-01-31 18:43:53,588 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+All workers have died, check stdout/stderr for error tracebacks.
+[2020-01-31 18:43:53,591 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Worker watchdog finished, terminating workers and stopping listener.
+[2020-01-31 18:43:53,591 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Worker watchdog finished, terminating workers and stopping listener.
+[2020-01-31 18:43:53,591 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Worker watchdog finished, terminating workers and stopping listener.
+[2020-01-31 18:43:59,216 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+fmin finished.
+[2020-01-31 18:43:59,216 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+fmin finished.
+[2020-01-31 18:43:59,216 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+fmin finished.
+[2020-01-31 18:45:25,545 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting experiment: dataset
+[2020-01-31 18:45:25,545 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Using default parameter search space.
+[2020-01-31 18:45:25,547 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Adding default early stopping behaviour.
+[2020-01-31 18:45:25,548 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Fixed parameters: 
+model: 
+{}
+trainer: 
+{'early_stopping_kwargs': {'early_stopping_metric': 'elbo', 'save_best_state_metric': 'elbo', 'patience': 50, 'threshold': 0, 'reduce_lr_on_plateau': True, 'lr_patience': 25, 'lr_factor': 0.2}, 'metrics_to_monitor': ['elbo']}
+train method: 
+{'n_epochs': 5}
+[2020-01-31 18:45:25,549 - MainProcess - MainThread] INFO - scvi.inference.autotune.all
+Starting parallel hyperoptimization
+[2020-01-31 18:45:25,783 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting MongoDb process, logs redirected to ./mongo/mongo_logfile.txt.
+[2020-01-31 18:45:31,254 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting minimization procedure
+[2020-01-31 18:45:31,258 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+Starting FminProcess.
+[2020-01-31 18:45:31,259 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+Starting worker launcher
+[2020-01-31 18:45:31,272 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+gpu_ids is None, defaulting to all 1 GPUs found by torch.
+[2020-01-31 18:45:31,275 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Some GPU.s found and n_cpu_wokers is None, defaulting to n_cpu_workers = 0
+[2020-01-31 18:45:31,277 - MainProcess - Progress Listener] DEBUG - scvi.inference.autotune.all
+Listener listening...
+[2020-01-31 18:45:31,277 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 1 worker.s for each of the 1 gpu.s set for use/found.
+[2020-01-31 18:45:51,511 - MainProcess - Worker Launcher] INFO - scvi.inference.autotune.all
+Starting 0 cpu worker.s
+[2020-01-31 18:45:55,338 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:45:55,338 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Worker working...
+[2020-01-31 18:46:11,173 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+No timer, waiting for fmin...
+[2020-01-31 18:46:10,824 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Asynchronous logging has been set.
+[2020-01-31 18:46:10,825 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Instantiating MongoTrials object.
+[2020-01-31 18:46:10,879 - Fmin - MainThread] DEBUG - scvi.inference.autotune.all
+Calling fmin.
+[2020-01-31 18:48:55,971 - Worker GPU 0:0 - MainThread] DEBUG - scvi.inference.autotune.all
+Caught ReserveTimeout. Exiting after failing to reserve job for 180 seconds.
+[2020-01-31 18:48:56,552 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+All workers have died, check stdout/stderr for error tracebacks.
+[2020-01-31 18:48:56,553 - MainProcess - Worker Launcher] DEBUG - scvi.inference.autotune.all
+Worker watchdog finished, terminating workers and stopping listener.
+[2020-01-31 18:49:06,351 - MainProcess - MainThread] DEBUG - scvi.inference.autotune.all
+multiple_hosts set to false, Fmin has 300 seconds to finish
+[2020-01-31 18:51:41,515 - MainProcess - Fmin Launcher] DEBUG - scvi.inference.autotune.all
+fmin finished.

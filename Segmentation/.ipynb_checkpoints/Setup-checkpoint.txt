@@ -1,0 +1,12 @@
+conda create --name cellpose_v1 python=3.7
+
+conda activate cellpose_v1
+
+conda install ipykernel
+
+python -m ipykernel install --user --name cellpose_v1 --display-name="Python3.7 Cellpose V1"
+
+pip install cellpose[gui]
+
+edit .bashrc
+

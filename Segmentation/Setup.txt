@@ -1,0 +1,22 @@
+edit .bashrc (Ask for help)
+    export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/usr/local/cuda-10.0/lib64:/usr/local/cuda-10.0/extras/CUPTI/lib64"
+    export CUDA_HOME=/usr/local/cuda-10.0
+    export PATH="usr/local/cuda-10.0/bin:$PATH"
+    
+conda create --name cellpose_v1 python=3.7
+
+conda activate cellpose_v1
+
+conda install ipykernel
+
+python -m ipykernel install --user --name cellpose_v1 --display-name="Python3.7 Cellpose V1"
+
+pip install cellpose[gui]
+
+python -m cellpose
+
+# if you get a core dumped error
+pip uninstall mxnet-mkl
+pip uninstall mxnet
+pip install mxnet==1.4.0
+pip install --no-deps cellpose --upgrade

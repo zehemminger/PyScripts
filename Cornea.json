@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "cornea-205000",
+  "private_key_id": "4350ca0b283d2fb57ee745cc36539f59f2973ed5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDVxUAChA94w1nB\nFsrkOFyRpzHR2yUsdoDdZtpTNw0X4UQMj/R64rDDs70lv4tfipSm9gCmHq0Shav/\noEr860xg8jnxOFBaiR4qFUB2vpfrrR782qMXx2nErkzkRGqM0vjRyIQ8qGpj9Mpn\nXet2dEOR8uFsmKRp8zHSYCmcJlxJ90DE86+2cUADkn0c+4u8CxUFHX3iMov2gtDP\nr1P0ShDf1hEFCZoKj5bhMrRXe1971MJDeSqj7g/PkxXg9Z4WyV84mEN3DWoBfUJh\nxNscqlKbDsxeBQ0ZsxUAq5TOL/zSju4CtpmrE98XzIY46iqHFCTKfZwTnj0z82Gd\nWWyBMhdNAgMBAAECggEAMRxlGX7d8BRPKzNRju9c4vB6m1gBmQ6ridHekBYaabVM\ntScgV1f7nKZPKtwvyJYVkyr6mK98+v+fNXXNrH/hNveHNMIHgdk1Bx2FRxJ/4/rM\nnvIa3HRpefBCRYHrSamRVN7AdJALiyW6l1dGKFtLB715KQIDabzfohGKFa/hbXNX\nHlB93hsjiMdJDga3arL4wkuju+5TWmDhkzonxmNWu5K5BJqVWmRGeklvwlsH/5wC\nmvCm7nzhojqdhs886kiY3OGCG5jl18Sf6Krm82f+u8gQtb7X+6+ML4gcG+1Tz5fi\nh739TdII8tdHAvotTkJzuEk5bhHoA92jLKr4ZSV3AQKBgQDrPjvjPR29ype5agPD\nMg7ikwj0+b5k5zEka5/vTzOYMUH19jqnMOQa989nC7mmuRofxEqz49JmhiOJ4TnX\nFNxVizSWdaHuSMauE+rfXl459cEwJLGPcA01ShdjpMmeH91E4rD0HXtSVszu/PK7\nV9RRtyVtwEQnsgSBVn8e72VuTQKBgQDoofwIVLxgP3gfB3amyRFctMAVyeTsfFEB\nv3N5+Wp/aqX/7JWFpTFE9QyRv7hY242aaJSMGF57CpSLi5/qDwOCR39UyuzqKCaa\nrNvDLY1sXhkx1wgLiv2+KkUm0a7XO6P75KBWnbi9gNr4ENKdLJwHAcOvyPN2JtVM\nfI/9oN3NAQKBgAo0ce6iqRahokFV2wHtuv2TOVE/QEYqTVRyIscD3Y4dnOnpm5PD\nKDIPS/0BYjVcVEjKgB8bo/X0nbgOgC7XZdOELWzVf4fRumS00nyMIHRNN+s5vEYn\nqzsDks4syN5GLZgeaWS9nqrsvwkjCficj8ZXtpTzQUGjlFR0ByG1auYFAoGBAMIt\nC0Es8XvpHmvQAALhTAO0v6ywM8wNTFSIKGxEetdV/q9rG7dNFp33aQFzJP3ObRjY\neD2jzaEoSKtd5SIqXARvh2IQa8ZbszViWaFFsYkl1iPa19VCs9/6SnRHi4gOOSd1\nQzxpNB3Bo4RyDkqxRJ84os1kj4ssiNfqFQpgLyMBAoGBANg95nmsNCNikshLCyki\n/CN4GJUaBsFlhwDz4puanecDQ0S0noLRo+fGewkbJX7M1zfUfFNEj+/fdbmWj712\nRVhj/oWHB01nKJUddvse/ig06QwxXdj3uJXrfBGQYlfr6Hln3+MPjJH4x4vsQ6x1\njA6Yijthrv+hzlTrkgQgPMIF\n-----END PRIVATE KEY-----\n",
+  "client_email": "default@cornea-205000.iam.gserviceaccount.com",
+  "client_id": "111854509542000411062",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/default%40cornea-205000.iam.gserviceaccount.com"
+}
